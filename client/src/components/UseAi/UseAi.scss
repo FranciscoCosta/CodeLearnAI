@@ -21,7 +21,7 @@
         }
 
 
-        form{
+        .UseAi-box{
             background-color: rgba(0, 0, 0, 0.8);
             border: 1px solid black;
             color: white;
@@ -33,6 +33,11 @@
             width: 70rem;
             padding: 0px 5px 10px 5px;
             position: relative;
+
+            .UseAi-display{
+                height: 90%;
+                overflow-y: scroll;
+            }
 
             .Use__ai-promp-container{
                 background-color: #40414f;
@@ -73,14 +78,13 @@
                     }   
             }
             .UseAi__Chat-log{
-                height: 90%;
                 text-align: left;
                 display: flex;
                 
                 .UseAi__chat-message{
                     width: 100%;
                     height: max-content;
-                    background-color: #40414f;
+                    background-color: rgba(0, 0, 0, 0.5);
                     .UseAi-bot{
                         background-color: rgba(124,124,124,0.6);
                     }
@@ -106,6 +110,8 @@
                         .Use__ai-message{
                             padding-left: 40px;
                             padding-right: 40px;
+                            max-width: 1000px;
+                            text-align: center;
                         }
                     }
                 }

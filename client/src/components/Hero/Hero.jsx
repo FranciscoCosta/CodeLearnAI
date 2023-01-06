@@ -11,7 +11,13 @@ function Hero() {
         A melhor <span>App</span> no mercado para <span>aprender</span> a codar.
         {/* Simples , rápida e eficaz. */}
         </h1>
-        <button>Começar</button>
+        <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='#Usage';
+              }}
+        >Começar</button>
       </div>
       <div className='Fade-out'> </div>
     </div>
