@@ -11,6 +11,7 @@
         }
     }
     ul{
+        text-decoration: none;
         margin-top: 2rem;
         display: flex;
         list-style: none;
@@ -20,10 +21,18 @@
         height: 100%;
 
         li{
+            text-decoration: none;
             font-size: 2rem;
             font-weight: 700;
             color: var(--white);
             cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: var(--white);
+            }
         }
+
+
     }
 }

@@ -3,7 +3,7 @@ import './Tutorial.scss'
 
 function Tutorial() {
   return (
-    <div className='Tutorial'>
+    <div className='Tutorial' id='Tutorial'>
       
     </div>
   )

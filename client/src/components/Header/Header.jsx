@@ -10,8 +10,8 @@ function Header() {
         </div>
         <nav>
             <ul>
-                {["Home", "Tutorial", "Usage", "Help"].map((item)=>(
-                    <li key={item} href={item}>{item}</li>
+                {["Tutorial", "Usage", "Help"].map((item)=>(
+                    <li key={item}><a href={`#${item}`}>{item}</a></li>
                 ))}
             </ul>
         </nav>

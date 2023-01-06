@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 
 function Hero() {
   return (
-    <div className='Hero'>
+    <div className='Hero' id='Hero'>
       <Header/>
       <div className="Hero__container">
         <h1>
@@ -13,6 +13,7 @@ function Hero() {
         </h1>
         <button>Começar</button>
       </div>
+      <div className='Fade-out'> </div>
     </div>
   )
 }
