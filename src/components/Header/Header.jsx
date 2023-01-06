@@ -1,14 +1,16 @@
 import React from 'react'
+import './Header.scss'
+import logo from '../../assets/logo.png'
 
 function Header() {
   return (
     <div className='Header'>
         <div className="Header__logo">
-            CodeLearnAi
+            <img src={logo} alt="logo-codelearnai" />
         </div>
         <nav>
             <ul>
-                {["Home", "Tutorial", "Use", "Footer"].map((item)=>(
+                {["Home", "Tutorial", "Usage", "Help"].map((item)=>(
                     <li key={item} href={item}>{item}</li>
                 ))}
             </ul>
