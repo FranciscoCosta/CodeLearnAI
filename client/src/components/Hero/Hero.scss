@@ -10,30 +10,31 @@
     position: relative;
 
     .Hero__container{
-        align-self: flex-end;
+        align-self: flex-start;
         align-items: center;
         display: flex;
         flex-direction: column;
         height: 40rem;
         width: 40rem;
-        margin-right: 8rem;
+        margin-top: 5rem;
+        margin-left: 4rem;
         gap: 2rem;
 
         h1{
-            text-align: end;
+            text-align: start;
             font-size: 5rem;
             color: black;
         }
         
         span{
-            color: white;
+            color: #feb028;
         }
 
         button{
-            align-self: flex-end;
-                background: linear-gradient(90deg, #fb930b, #fea443);
+            align-self: flex-start;
+                background: linear-gradient(90deg, #fdc13e, #feb028);
                 border: none;
-                color: black;
+                color: white;
                 border-radius: 45px;
                 box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.5);
                 cursor: pointer;
@@ -53,14 +54,11 @@
                 }
         }
     }
-}
-.Fade-out{
-    align-self:end;
-    display: flex;
-    width: 100%;
-    background-color: red;
-    position: absolute;
-    bottom: 0%;
-    height: 2rem;
-    background: linear-gradient(180deg, rgba(105,105,105,0.5018382352941176) 10%, rgba(0,0,0,0.5) 90%);
+    &::after{
+        content: "";
+        background: linear-gradient(to top, rgba(219,230,235,0.95), rgba(26, 26, 26, 0));
+        display: block;
+        height: 100px;
+
+    }
 }

@@ -1,10 +1,12 @@
 .UseAi{
-    background: url(../../assets/bg2.png);
+    background: #dbe6eb;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
+
+    
 
     .UseAi__container{
         min-height: 100vh;
@@ -23,25 +25,27 @@
 
         .UseAi-box{
             background-color: rgba(0, 0, 0, 0.8);
-            border: 1px solid black;
+            border: 4px solid white;
+            border-radius: 25px;
             color: white;
             text-align: center;
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
             display: flex;
             flex-direction: column;
             height: 45rem;
-            width: 70rem;
+            width: 85%;
             padding: 0px 5px 10px 5px;
             position: relative;
 
             .UseAi-display{
                 height: 90%;
                 overflow-y: scroll;
+                padding-top: 25px;
             }
 
             .Use__ai-promp-container{
                 background-color: #40414f;
-                border: 1px solid rgba(0, 0, 0, 0.8);
+                border: 2px solid rgba(0, 0, 0, 0.8);
                 display: flex;
                 align-items: center;
                 width: 60rem;
@@ -49,12 +53,15 @@
                 bottom: 0;
                 margin-bottom: 1rem;
                 width: 95%;
+                margin-left: 25px;
+                border-radius: 20px;
 
                 textarea{
+                    border-radius: 20px;
                     resize: none;
                     width: 100%;
                     height: 3rem;
-                    padding: 2px 5px;
+                    padding: 10px;
                     font-size: 1rem;
                     font-weight: 600;
                     color: white;
@@ -64,6 +71,7 @@
                 }
     
                 button {
+                    border-radius: 20px;
                     align-self: flex-end;
                     resize: none;
                     height: 3rem;
@@ -80,12 +88,15 @@
             .UseAi__Chat-log{
                 text-align: left;
                 display: flex;
+                border-radius: 20px;
                 
                 .UseAi__chat-message{
                     width: 100%;
                     height: max-content;
                     background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 20px;
                     .UseAi-bot{
+                        border-radius: 20px;
                         background-color: rgba(124,124,124,0.6);
                     }
                     .UseAi__menssage-container{
@@ -110,8 +121,11 @@
                         .Use__ai-message{
                             padding-left: 40px;
                             padding-right: 40px;
-                            max-width: 1000px;
+                            max-width: 75rem;
                             text-align: center;
+                            margin: 0 auto;
+                            font-size: 1.2rem;
+                            font-weight: 500;
                         }
                     }
                 }

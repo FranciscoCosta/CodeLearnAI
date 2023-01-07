@@ -1,8 +1,24 @@
 .Tutorial{
-    background: url(../../assets/bg1.png);
+    background: #dbe6eb;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     width: 100%;
-}
+    position: relative;
+
+
+    .Tutorial__container{
+        display: flex;
+        border: 1px solid rebeccapurple;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+
+        h1{
+            font-size: 4rem;
+            margin-top: 2rem;
+        }
+    }
+    }
+
