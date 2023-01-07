@@ -1,135 +1,147 @@
-.UseAi{
-    background: #dbe6eb;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.UseAi {
+  background: #dbe6eb;
+  padding-top: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--darkblue);
+  }
+  span{
+    color: var(--orange);
+  }
+
+  .UseAi__container {
     min-height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 
-    
-
-    .UseAi__container{
-        min-height: 100vh;
-        width: 100%;
-        border: 1px solid red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1{
-            margin-top: 1rem;
-            font-size: 4rem;
-            color: black;
-        }
-
-
-        .UseAi-box{
-            background-color: rgba(0, 0, 0, 0.8);
-            border: 4px solid white;
-            border-radius: 25px;
-            color: white;
-            text-align: center;
-            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
-            display: flex;
-            flex-direction: column;
-            height: 45rem;
-            width: 85%;
-            padding: 0px 5px 10px 5px;
-            position: relative;
-
-            .UseAi-display{
-                height: 90%;
-                overflow-y: scroll;
-                padding-top: 25px;
-            }
-
-            .Use__ai-promp-container{
-                background-color: #40414f;
-                border: 2px solid rgba(0, 0, 0, 0.8);
-                display: flex;
-                align-items: center;
-                width: 60rem;
-                position: absolute;
-                bottom: 0;
-                margin-bottom: 1rem;
-                width: 95%;
-                margin-left: 25px;
-                border-radius: 20px;
-
-                textarea{
-                    border-radius: 20px;
-                    resize: none;
-                    width: 100%;
-                    height: 3rem;
-                    padding: 10px;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    color: white;
-                    background-color: #40414f;
-                    border: none;
-                    outline: none;
-                }
-    
-                button {
-                    border-radius: 20px;
-                    align-self: flex-end;
-                    resize: none;
-                    height: 3rem;
-                    padding-right: 20px;
-                    padding-top: 10px;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    color: white;
-                    background-color: #40414f;
-                    border: none;
-                    outline: none;
-                    }   
-            }
-            .UseAi__Chat-log{
-                text-align: left;
-                display: flex;
-                border-radius: 20px;
-                
-                .UseAi__chat-message{
-                    width: 100%;
-                    height: max-content;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border-radius: 20px;
-                    .UseAi-bot{
-                        border-radius: 20px;
-                        background-color: rgba(124,124,124,0.6);
-                    }
-                    .UseAi__menssage-container{
-                        width: 100%;
-                        text-align: center;
-                        margin: 0 auto;
-                        padding: 12px;
-                        padding-left: 24px;
-                        padding-right: 24px;
-                        display: flex;
-                        .UseAi__avatar{
-                            color: black;
-                            width: min-content;
-                            background-color: white;
-                            border-radius: 50%;
-                            width: 40px;
-                            height: 40px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                        .Use__ai-message{
-                            padding-left: 40px;
-                            padding-right: 40px;
-                            max-width: 75rem;
-                            text-align: center;
-                            margin: 0 auto;
-                            font-size: 1.2rem;
-                            font-weight: 500;
-                        }
-                    }
-                }
-            }
-        }
+    h1 {
+      margin-top: 1rem;
+      font-size: 4rem;
+      color: black;
     }
+
+    .UseAi__right{
+      flex: 2;
+
+      img{
+        width: 30rem;
+        margin: 4rem;
+      }
+    }
+
+    .UseAi-box {
+      background-color: rgba(0, 0, 0, 1);
+      border: 4px solid var(--orange);
+      color: white;
+      text-align: center;
+      margin-left: 5rem;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      height: 50rem;
+      flex: 4;
+      position: relative;
+
+      .UseAi-display {
+        height: 90%;
+        overflow-y: scroll;
+      }
+      .UseAi-input-container {
+        background-color: red;
+      
+      .Use__ai-promp-container {
+        background-color: #40414f;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 1rem;
+        width: 95%;
+        margin-left: 25px;
+        border-radius: 20px;
+
+        textarea {
+          border-radius: 20px;
+          resize: none;
+          width: 100%;
+          height: 3rem;
+          padding: 10px;
+          font-size: 1rem;
+          font-weight: 600;
+          color: white;
+          background-color: #40414f;
+          border: none;
+          outline: none;
+        }
+
+        button {
+          border-radius: 20px;
+          align-self: flex-end;
+          resize: none;
+          height: 3rem;
+          padding-right: 20px;
+          padding-top: 10px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: white;
+          background-color: #40414f;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+      .UseAi__Chat-log {
+        text-align: left;
+        display: flex;
+        border-radius: 20px;
+
+        .UseAi__chat-message {
+          width: 100%;
+          height: max-content;
+          background-color: #40414f;
+          .UseAi-bot {
+            background-color: rgba(124, 124, 124, 0.6);
+          }
+          .UseAi__menssage-container {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            display: flex;
+            .UseAi__avatar {
+              color: black;
+              width: min-content;
+              background-color: var(--orange);
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .Use__ai-message {
+              padding-left: 40px;
+              padding-right: 40px;
+              max-width: 65rem;
+              text-align: left;
+              margin: 0 auto;
+              font-size: 1.2rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
 }

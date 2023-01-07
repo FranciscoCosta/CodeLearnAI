@@ -10,14 +10,48 @@
 
     .Tutorial__container{
         display: flex;
-        border: 1px solid rebeccapurple;
         height: 100vh;
         display: flex;
+        flex-direction: row;
         justify-content: center;
 
-        h1{
-            font-size: 4rem;
-            margin-top: 2rem;
+        .Tutorial__container-right{
+            flex: 1;
+            h1{
+                text-align: center;
+                color: var(--darkblue);
+                font-size: 4rem;
+            }
+            span{
+                color: var(--orange);
+            }
+        }
+        .Tutorial__container-left{
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+
+            .Tutorial__question{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4rem;
+                margin-right: 2rem;
+
+                h2{
+                    font-size: 2.2rem;
+                    color: var(--darkblue);
+                }
+            }
+
+            .Tutorial__example{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 2rem;
+            }
         }
     }
     }

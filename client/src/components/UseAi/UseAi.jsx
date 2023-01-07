@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./UseAi.scss";
 import { FaRobot, FaUserAlt } from "react-icons/fa";
 import { RiSendPlaneFill } from "react-icons/ri";
+import usage from '../../assets/usage.png'
 
 function UseAi() {
   const [input, setinput] = useState("");
@@ -31,15 +32,18 @@ function UseAi() {
 
   return (
     <div className="UseAi" id="Usage">
+      <h1>Code<span>Learn</span>Ai</h1>
       <div className="UseAi__container">
-        <h1>Faz me uma pergunta <FaRobot/></h1>
+        <div className="UseAi__right">
+          <img src={usage} alt="usage-img" />
+        </div>
         <div className="UseAi-box">
           <div className="UseAi-display">
           {chatlog.map((menssage, index)=>(
             <ChatMenssage menssage={menssage} key={index}/>
             ))}
             </div>
-          <div>
+          <div className="UseAi-input-container">
             <form className="Use__ai-promp-container" onSubmit={handleSubmit}>
               <textarea
                 name="promp"
@@ -48,10 +52,10 @@ function UseAi() {
                 rows="1"
                 onChange={(e) => setinput(e.target.value)}
                 value={input}
-                placeholder="Ask CodeLearnAi"
+                placeholder="Faz me uma pergunta ..."
               />
               <button type="submit">
-                <RiSendPlaneFill />
+                <RiSendPlaneFill color="var(--orange)" cursor="pointer"/>
               </button>
             </form>
           </div>
