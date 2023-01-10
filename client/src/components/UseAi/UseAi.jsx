@@ -31,8 +31,8 @@ function UseAi() {
   };
 
   return (
-    <div className="UseAi" id="Usage">
-      <h1>Code<span>Learn</span>Ai</h1>
+    <div className="UseAi" >
+      <h1 id="Usar">Code<span>Learn</span>Ai</h1>
       <div className="UseAi__container">
         <div className="UseAi__right">
           <img src={usage} alt="usage-img" />

@@ -3,6 +3,67 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 20vh;
     width: 100%;
+
+    .Footer__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+
+
+        .Footer__contact{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-left: 6rem;
+
+            .Footer__contact-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--darkblue);
+                gap: 1rem;
+                img{
+                    width: 2rem;
+                }
+
+                p{
+                    color: var(--orange);
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .app__social{
+            display: flex;
+            gap: 2rem;
+
+            div{
+
+                svg{
+                    color: gainsboro;
+                    background-color: black;
+                    padding: 6px;
+                    border-radius: 50%;
+
+                    &:hover{
+                        transform: translateY(-7px);
+                        transition: 0.5s all ease-in-out;
+                        color: var(--orange);
+                        background-color: var(--darkblue);
+                    }
+                }
+            }
+        }
+
+        .copyright{
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--darkblue);
+            margin-right: 6rem;
+        }
+    }
 }

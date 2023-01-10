@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const configuration = new Configuration({
     organization: "org-2ChiH8bI34YQBRmxt8l6wKL1",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const port=3080;
+
 
 app.post('/', async(req,res)=>{
     const {menssage } = req.body;  
