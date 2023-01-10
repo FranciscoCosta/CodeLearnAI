@@ -15,7 +15,7 @@ function UseAi() {
     await setchatlog(newChatLog);
 
     const menssages = newChatLog.map((menssage)=>menssage.menssage).join("/n");
-    const response = await fetch("http://localhost:3080/",{
+    const response = await fetch("https://codelearnai.onrender.com",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
