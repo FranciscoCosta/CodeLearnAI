@@ -3,10 +3,11 @@ const express = require ('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+console.log(process.env.REACT_APP_OPENAI_API_KEY);
 
 const configuration = new Configuration({
     organization: "org-2ChiH8bI34YQBRmxt8l6wKL1",
-    apiKey: "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",
+    apiKey:process.env.REACT_APP_OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
