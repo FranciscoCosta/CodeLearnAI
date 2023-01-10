@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Header.scss'
 import logo from '../../assets/logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { GrClose } from 'react-icons/gr';
+import { AiOutlineClose } from 'react-icons/ai';
 
 
 
@@ -21,7 +21,7 @@ function Header() {
                 ))}
             </ul>
             <div className="Header__mobile">
-                <button onClick={()=>setMenu(!menu)}>{menu ? <GrClose color='var(--orange)'/> : <GiHamburgerMenu color='var(--orange)'/>}</button>
+                <button onClick={()=>setMenu(!menu)}>{menu ? <AiOutlineClose color='var(--orange)'/> : <GiHamburgerMenu color='var(--orange)'/>}</button>
                 {menu && <ul className='Header__container-mobile'>
                 {["Tutorial", "Usar", "Ajuda"].map((item)=>(
                     <li key={item}><a href={`#${item}`}>{item}</a></li>

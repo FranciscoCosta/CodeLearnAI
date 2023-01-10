@@ -21,7 +21,7 @@ function Hero() {
             type="button"
             onClick={(e) => {
               e.preventDefault();
-              window.location.href='#Usage';
+              window.location.href='#Usar';
               }}
         >Começar</button>
       </motion.div>

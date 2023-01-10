@@ -32,11 +32,11 @@ function UseAi() {
 
   return (
     <div className="UseAi" >
+      <div className="UseAi__title">
       <h1 id="Usar">Code<span>Learn</span>Ai</h1>
-      <div className="UseAi__container">
-        <div className="UseAi__right">
           <img src={usage} alt="usage-img" />
-        </div>
+      </div>
+      <div className="UseAi__container">
         <div className="UseAi-box">
           <div className="UseAi-display">
           {chatlog.map((menssage, index)=>(
